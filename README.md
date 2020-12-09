@@ -1,2 +1,2 @@
 # webdriverio_poc
-WebdriverIO POC
+Automation using WebdriverIO
