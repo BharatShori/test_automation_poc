@@ -1,4 +1,4 @@
-const Page = require('./page');
+const Page = require('../pageobjects/page');
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -18,8 +18,8 @@ class LoanRepaymentPage extends Page {
     get applyInNetBank() { return $('#btnApplyNetBank') };
     get result() { return $('.result-block') };
 
+    
     // select loan type method
-
     selectLoanType(loanType) {
         this.typeOfLoan.selectByVisibleText(loanType);
     }
@@ -47,6 +47,14 @@ class LoanRepaymentPage extends Page {
     // calculate repayment amount
     calcualteRepayment() {
         this.calculate.click();
+    }
+
+    /**
+     * overwrite specifc options to adapt it to page object
+     */
+
+    open () {
+        return super.open('digital/calculators/personal-loan-repayment-calculator');
     }
 
 }

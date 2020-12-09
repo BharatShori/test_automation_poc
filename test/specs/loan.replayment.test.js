@@ -38,29 +38,5 @@ describe('Loan Repayment Calcualtor', () => {
         expect(LoanRepaymentPage.result).toHaveTextContaining('411');
     });
 
-    // it('there should be three types of loans avilable', () => {
-    //     expect(LoanRepaymentPage.typeOfLoan).toHaveTextContaining('Variable Rate');
-    //     expect(LoanRepaymentPage.typeOfLoan).toHaveTextContaining('Fixed Rate');
-    //     expect(LoanRepaymentPage.typeOfLoan).toHaveTextContaining('Secure Car');
-
-    //     //LoanRepaymentPage.typeOfLoan.selectByVisibleText('Fixed Rate');
-    //     // console.log('print selected value' + LoanRepaymentPage.typeOfLoan.getHTML());
-    //     // console.log('print selected value' + LoanRepaymentPage.typeOfLoan.getProperty('name'));
-    //     // expect(LoanRepaymentPage.typeOfLoan).toHaveTextContaining(
-    //     //     'PERSONAL LOAN REPAYMENTS CALCULATOR');
-
-    // });
 
 });
-
-
-
-
-        // assert(LoanRepaymentPage.pageHeader.getText().equal('PERSONAL LOAN REPAYMENTS CALCULATOR'));
-
-
-
-        // LoginPage.login('tomsmith', 'SuperSecretPassword!');
-        // expect(SecurePage.flashAlert).toBeExisting();
-        // expect(SecurePage.flashAlert).toHaveTextContaining(
-        //     'You logged into a secure area!');
